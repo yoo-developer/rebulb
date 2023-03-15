@@ -47,12 +47,13 @@ body{
     transform: translate(-50%);
 }
 #explore{
+    width: 100vw;
     position: absolute;
-    top: 200%;
     left: 0%;
-    background-color: #000000;
-    width: 100%;
+    top: 100%;
+    margin-top: 40vh;
     height: 100%;
+    transform: translate(-12%);
 }
 #explore h1{
     color: rgb(255, 255, 255);
@@ -77,11 +78,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    position:absolute;
-    left: 0%;
+    width: 100vw;
+    position:relative;
+    right: 0vw;
     top: 20%;
-    margin: 0 auto;
+    margin: 0 0;
   }
   
 
@@ -102,9 +103,10 @@ body{
     text-shadow: 0 0 20px black;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition:0.5s;
+    transition: 0.5s ;
   } 
   .card:hover{
+    
     background-position: -100px;
     cursor: pointer;
   }
