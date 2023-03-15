@@ -3,12 +3,25 @@ body{
     background-color: #000000;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    zoom: 80%;
+}
+#about{
+    margin-top: 10vmin;
+}
 .head{
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-image: radial-gradient(white,black);
+    background-size: 300% 350%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .title{
     color: white;
@@ -18,103 +31,71 @@ body{
     transform: translate(-50% , -100%);
     text-transform: uppercase;
     font-size: 5vw;
+    font-family: 'Poppins', sans-serif;
 }
 .title b{
     color: yellow;
+    text-shadow: 0 0 150px yellow;
 }
-#about{
-    position: absolute;
-    left: 0%;
-    top: 100%;
+.nav_bar{
     width: 100%;
-    height: 100%;
-    background-color: white;
-}
-#about h1{
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 5.1vmin;
-    margin-top: 5vh;
-}
-.fa_about_container{
-    width: 80%;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%);
-}
-#explore{
-    width: 100vw;
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    margin-top: 40vh;
-    height: 100%;
-    transform: translate(-12%);
-}
-#explore h1{
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 5.1vmin;
-    margin-top: 5vh;
-}
-#explore h2{
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%);
-    font-size: 5.1vmin;
-    margin-top: 5vh;
-}
-.container {
+    height:fit-content;
+    background-color: rgb(22, 22, 22);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100vw;
-    position:relative;
-    right: 0vw;
-    top: 20%;
-    margin: 0 0;
-  }
-  
-
-  .card {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    margin: 100px;
-    padding: 50px;
-    width: 20vw;
-    height: 30vh;
+    justify-content: end;
+    position: fixed;
+    top: 0%;
+}
+.nav_item{
     color: white;
-    justify-content: center;
-    background-image: radial-gradient(white , #121212);
-    background-size: 200% 200%;
-    border: solid 2px white;
-    font-size: 3vmin;
-    text-shadow: 0 0 20px black;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ;
-  } 
-  .card:hover{
-    
-    background-position: -100px;
+    align-self: center;
+    padding: 1px;
+    margin-top:10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-inline: 1%;
+}
+.main_item{
+    color: white;
+    align-self: center;
+    padding: 1px;
+    margin-top:10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-inline: 1%;
+    justify-self: start;
+    position: absolute;
+    left: 0%;
+}
+.main_item b{
+    color: yellow;
+}
+.explore-btn{
+    position: relative;
+    top: 50%;
+    margin-top: 5vmin;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000000;
+    height: 10vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
     cursor: pointer;
-  }
-@media screen and (min-width: 900px) and (max-width:1000px){
-    .container {
-      justify-content: center;
-    }
-    .card {
-        width: 80%;
-    }
-  }
+    text-align: center;
+    margin: 10;
+    z-index: 100000;
+}
+.explore-btn b{
+    position: relative;
+    top: 30%;
+    z-index: 100000;
+}
